@@ -16,7 +16,7 @@ function App() {
       <NavigationBar />
       <Jumbotron />
       <Layout>
-        <Router>
+        <Router basename="/WebSite">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />

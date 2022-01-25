@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Psahu1296.github.io/WebSite/",
   "name": "web-site",
   "version": "0.1.0",
   "private": true,
@@ -16,9 +17,11 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cypress/react": "^5.12.1",
+    "@cypress/webpack-dev-server": "^1.8.0",
+    "cypress": "^9.2.1",
+    "gh-pages": "^3.2.3"
   }
 }
